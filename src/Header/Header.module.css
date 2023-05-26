@@ -1,0 +1,76 @@
+.HeadDiv{
+    background-color: black;
+    position: fixed;
+    top : 0;
+    padding : 0 20px;
+    display:flex;
+    width: 100%;
+    max-width: 1060px;
+    height: 100px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.MainBannerIcon{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.MenuListContainer{
+    display:flex;
+    height: 100%;
+}
+
+.MenuListContainer > li {
+    display:flex;
+    align-items: center;
+    padding : 0 20px;
+    cursor: pointer;
+}
+.MenuListContainer > li:first-child {
+    display:flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.eachNavContainer{
+    height: 100%;
+}
+
+.EachIcon{
+    height: 100%;
+    font-size: 20px;
+}
+
+.EachIcon_details{
+    height:100%;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.repo_list{
+    display: none;
+    width: 138.6px;
+    height: 100%;
+    position:relative;
+    top: 101px;
+    left: -138px;
+}
+.repo_list_each{
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    padding : 10px 0;
+    border-bottom : 1px solid white;
+    text-align:center;
+}
+
+.repo_list_each:hover{
+    cursor:pointer;
+}
+
+.repo_list_each>span{
+    font-size: 15px;
+    text-align:center;
+    color:white;
+}
