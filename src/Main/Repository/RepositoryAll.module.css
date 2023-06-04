@@ -1,0 +1,31 @@
+.repoAllTitle{
+    font-size: 3vw;
+
+}
+.repoAllContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    padding: 20px;
+
+}
+.repoContainer{
+    padding: 10px;
+    border: 1px solid white;
+    width: 98%;
+    margin: 10px;
+    height:100%;
+}
+
+.repoTitle{
+    display: flex;
+    font-size: 2vw;
+    width: 100%;
+    height: 70px;
+}
+
+.repoDescription{
+    font-size: 1vw;
+    padding-left: 80px;
+
+}

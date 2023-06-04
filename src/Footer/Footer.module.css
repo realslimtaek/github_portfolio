@@ -1,12 +1,12 @@
 .FooterWrapper{
+    margin-top: 50px;
     display:flex;
     justify-content: center;
     padding: 10px 0;
     position: relative;
     bottom:0;
     width:100%;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    /*background-color:white;*/
+    border-top: 2px solid rgba(255,255,255,0.5);
 }
 
 .githubSVG{
@@ -21,7 +21,6 @@
     padding: 0 30px;
     gap: 0 20px;
     margin-top: 2px;
-    /*width: 50px;*/
     height:50px;
     justify-content:center;
     text-align: center;

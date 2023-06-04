@@ -10,21 +10,27 @@ function MainPage(props) {
     // })
 
 
-
-
-
     return (
-        <div style={{height:"700px"}}>
+
+        <div>
             <div className={styles.mainContent}>
-            <span className={styles.mainWordSpan}>
-                FULLSTACK
-            </span>
+                <span className={styles.mainWordSpan}>
+                    FULLSTACK
+                </span>
             </div>
             <div className={styles.mainContent}>
-        <span className={styles.mainWordSpan}>
-                DEVELOPER
-            </span>
+                <span className={styles.mainWordSpan}>
+                    DEVELOPER
+                </span>
             </div>
+
+            <div className={styles.buttonContainer}>
+
+                <button className={styles.GoRepoButton}>
+                    FindOutWhatIDone
+                </button>
+            </div>
+
         </div>
     );
 }

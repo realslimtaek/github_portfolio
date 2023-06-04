@@ -15,8 +15,9 @@ export function GithubApi() {
 
     useEffect(() => {
         fetchRepo();
-    },[])
-    // console.log(githubData);
+    }, [])
+    // console.log(githubRepoList);
+
     dispatch(SETUSEREMAIL(githubUser));
     dispatch(SETUSERREPO(githubRepoList));
 }

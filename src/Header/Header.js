@@ -7,13 +7,18 @@ export default function Header() {
 
     const UserRepo = useSelector((state) => state.user.repo);
     const [click, setClick] = useState(false);
-    console.log(UserRepo);
 
     function showRepoList(e) {
         const repoList = document.getElementById("repoList");
-        repoList.style.display = "block";
-        if (!click) setClick(true);
-        else hideRepoList(e);
+        repoList.style.display = "none";
+        if(e.target.id === "repoListButton") {
+            repoList.style.display = "block";
+            if (!click) setClick(true);
+            else {
+                setClick(false);
+                repoList.style.display = "none";
+            }
+        }
 
     }
 
@@ -28,9 +33,13 @@ export default function Header() {
 
     }
 
+    function contactClicked(){
+        window.scrollTo({left:0, top:document.body.scrollHeight, behavior: "smooth"});
+    }
+
 
     return (
-        <div className={styles.HeadDiv} id="HeadDIv" onMouseLeave={hideRepoList} onClick={(e) => hideRepoList(e)}>
+        <div className={styles.HeadDiv} id="HeadDIv" onMouseLeave={(e) => hideRepoList(e)} onClick={(e) => showRepoList(e)}>
             {/*Header*/}
             <div className={styles.MainBannerIcon}>
                 <ul className={styles.MenuListContainer} style={{paddingLeft: "0"}}>
@@ -88,11 +97,10 @@ export default function Header() {
 
                     <li>
                         <div className={styles.eachNavContainer}>
-                            <Link to={"/contact"}>
-                                <button className={`${styles.EachIcon} ${styles.EachIcon_details}`}>
+                                <button className={`${styles.EachIcon} ${styles.EachIcon_details}`}
+                                onClick={contactClicked}>
                                     Contact
                                 </button>
-                            </Link>
                         </div>
                     </li>
                 </ul>

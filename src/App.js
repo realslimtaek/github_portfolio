@@ -4,16 +4,11 @@ import {GithubApi} from "./API/githubApi";
 
 function App() {
 
-    // GithubApi();
+    GithubApi();
 
-    // console.log(UserEmail);
-    // console.log("repo");
-    // console.log(UserRepo);
-
-
+    // GetRepoReadeMe("realslimtaek");
     return (
         <div className={"APP"}>
-
             <RouteRouter/>
         </div>
     );

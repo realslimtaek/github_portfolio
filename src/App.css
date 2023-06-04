@@ -36,10 +36,10 @@ a {
   font-family: inherit;
   cursor: default;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 a:hover {
-  text-decoration: none;
-  color: inherit;
+  /*text-decoration: none;*/
   cursor: pointer;
+  color: white;
 }

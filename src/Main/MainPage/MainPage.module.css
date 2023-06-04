@@ -10,5 +10,30 @@
     font-weight: 600;
 }
 
+.buttonContainer{
+    display:flex;
+    width: 100%;
+    /*position: relative;*/
+    /*right:0;*/
+    justify-content: right;
+}
+
+.GoRepoButton{
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    font-weight: 700;
+    width:300px;
+    height:50px;
+    border : 1px solid white;
+    border-radius: 25px;
+}
+
+.GoRepoButton:hover{
+    background-color: gray;
+    transition: all 0.2s ease-in-out;
+}
+
+
 @media all and (max-width: 1010px)  {  .mainWordSpan  { font-size: calc(16px + 17vw);  } }
 @media all and (min-width: 1010px) {  .mainWordSpan  { font-size:190px;  } }

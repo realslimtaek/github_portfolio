@@ -1,0 +1,22 @@
+.Container{
+    width: 100%;
+    display: flex;
+    /*background-color: cyan;*/
+    flex-direction: column;
+}
+
+
+.RepoName{
+    font-weight:700;
+    font-size: 2vw;
+}
+
+.readMeTitle{
+    margin-top: 20px;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.readMeContent{
+    white-space: pre-wrap;
+}
